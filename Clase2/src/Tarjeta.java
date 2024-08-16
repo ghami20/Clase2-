@@ -2,13 +2,13 @@ import java.time.LocalDate;
 
 public class Tarjeta {
 
-	private String titular;
+	private Titular titular;
 	private String numeroTarjeta;
 	private LocalDate fechaExpiracion;
 	private String cvv;
 	
 	//Constructor
-	public Tarjeta(String titular, String numeroTarjeta, LocalDate fechaExpiracion, String cvv) {
+	public Tarjeta(Titular titular, String numeroTarjeta, LocalDate fechaExpiracion, String cvv) {
 		super();
 		this.titular = titular;
 		this.numeroTarjeta = numeroTarjeta;
@@ -18,11 +18,11 @@ public class Tarjeta {
 
 	
 	//Get y set
-	public String getTitular() {
+	public Titular getTitular() {
 		return titular;
 	}
 	
-	public void setTitular(String titular) {
+	public void setTitular(Titular titular) {
 		this.titular = titular;
 	}
 	
